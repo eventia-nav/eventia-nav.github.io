@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HTML만으로 블로그 시작하기</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HTML만으로 만드는 미니멀 블로그 가이드">
+</head>
+<body>
+  <header>
+    <h1><a href="/index.html">블로그 제목</a></h1>
+    <nav>
+      <a href="/index.html">홈</a> ·
+      <a href="/archive.html">전체 글</a> ·
+      <a href="/about.html">소개</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>HTML만으로 블로그 시작하기</h2>
+        <p><small>작성일: <time datetime="2025-10-24">2025-10-24</time> · 태그:
+          <a href="/tags/tag-html.html">html</a>, <a href="/tags/tag-life.html">life</a>
+        </small></p>
+      </header>
+
+      <p>이 글은 CSS나 JS 없이도 쓸 수 있는 최소 블로그 제작 방법을 설명합니다.</p>
+
+      <h3 id="why">왜 HTML만으로?</h3>
+      <p>설정이 간단하고, 어디서나 열립니다. 유지보수가 쉽고 속도가 빠릅니다.</p>
+
+      <h3 id="how">어떻게 시작하나</h3>
+      <ol>
+        <li>폴더 구조를 만든다.</li>
+        <li>공통 레이아웃 템플릿을 준비한다.</li>
+        <li>글 파일을 작성하고 링크를 추가한다.</li>
+      </ol>
+
+      <figure>
+        <img src="/images/sample.png" alt="블로그 폴더 구조 예시" width="600">
+        <figcaption>간단한 폴더 구조 예시</figcaption>
+      </figure>
+
+      <h3 id="toc">간단 목차(페이지 내 링크)</h3>
+      <ul>
+        <li><a href="#why">왜 HTML만으로?</a></li>
+        <li><a href="#how">어떻게 시작하나</a></li>
+      </ul>
+    </article>
+
+    <nav>
+      <!-- 이전/다음 글 링크 수동 관리 -->
+      <p>
+        ← <a href="/posts/2025-10-20-previous.html">이전 글</a> |
+        <a href="/posts/2025-10-30-another.html">다음 글</a> →
+      </p>
+    </nav>
+  </main>
+
+  <hr>
+  <footer>
+    <small>© 2025 AISpeak. HTML-only blog.</small>
+  </footer>
+</body>
+</html>
